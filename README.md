@@ -1,5 +1,19 @@
 # JAX Soft Robot Modeling
 
+> [!IMPORTANT]
+> **This project is archived and is no longer under active development.**
+> [SoRoMoX (Soft Robot Models in jaX)](https://github.com/tud-phi/soromox) is the successor to `jsrm`.
+> Most features provided by `jsrm` are also available in SoRoMoX through a slightly modified interface.
+>
+> SoRoMoX replaces the symbolic derivation pipeline with scalable, fully numerical JAX implementations and adds
+> articulated, Piecewise Constant Strain (PCS), and Geometric Variable Strain (GVS) models behind a common
+> control-oriented interface. It supports planar and spatial robots, additional actuation models, model-based
+> controllers, multiple rendering backends, and workflows for parameter identification, optimization, residual
+> learning, safety-constrained control, and reinforcement learning. Its JAX-native implementation also provides
+> JIT compilation, automatic differentiation, vectorization, batching, and execution on CPUs, GPUs, and TPUs.
+> In particular, SoRoMoX is significantly faster when simulating more than one planar PCS system, because its
+> fully numerical dynamics implementation is no longer restricted by the limitations of symbolic dynamics derivation.
+
 This repository contains symbolic derivations of the kinematics and dynamics of various soft robots using Sympy.
 The symbolic expressions are then implemented in JAX and can be used for fast, parallelizable, and differentiable simulations.
 So far, we have focused on planar settings and implemented the following soft robots:
